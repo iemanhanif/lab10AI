@@ -1,0 +1,35 @@
+
+public class TestRectangle {
+     public static void main(String[] args) {
+        // Create a Rectangle object using the default constructor
+        Rectangle rectangle1 = new Rectangle();
+        System.out.println("Rectangle 1:");
+        System.out.println("Length: " + rectangle1.getLength());
+        System.out.println("Width: " + rectangle1.getWidth());
+        System.out.println("Perimeter: " + rectangle1.calculatePerimeter());
+        System.out.println("Area: " + rectangle1.calculateArea());
+
+        // Create a Rectangle object using the parameterized constructor
+        Rectangle rectangle2 = new Rectangle(5.0, 3.0);
+        System.out.println("\nRectangle 2:");
+        System.out.println("Length: " + rectangle2.getLength());
+        System.out.println("Width: " + rectangle2.getWidth());
+        System.out.println("Perimeter: " + rectangle2.calculatePerimeter());
+        System.out.println("Area: " + rectangle2.calculateArea());
+
+        // Test the setter methods
+        rectangle2.setLength(15.0);
+        rectangle2.setWidth(10.0);
+        System.out.println("\nUpdated Rectangle 2:");
+        System.out.println("Length: " + rectangle2.getLength());
+        System.out.println("Width: " + rectangle2.getWidth());
+        System.out.println("Perimeter: " + rectangle2.calculatePerimeter());
+        System.out.println("Area: " + rectangle2.calculateArea());
+
+        // Test invalid values
+        rectangle2.setLength(25.0); // Invalid
+        rectangle2.setWidth(-5.0);   // Invalid
+    }
+}
+
+
